@@ -1,0 +1,100 @@
+.cardContainer{
+    position: relative;
+    margin-top: 5em;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hiddenCard {
+    position: absolute;
+    display: inline-block;
+    left: -1.9375rem;
+    top: -2.75rem;
+    width: 150px;
+    height: 250px;
+    background-color: #fff;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.15);
+    box-shadow: 0 1px 1px rgba(0,0,0,0.15);
+    cursor: default;
+    will-change: transform;
+  }
+  .hiddenCard:before,
+  .hiddenCard:after {
+    position: absolute;
+    font-size: 0.7rem;
+    text-align: center;
+    line-height: 0.7rem;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    white-space: pre-line;
+    width: 0.55rem;
+    letter-spacing: -0.1rem;
+  }
+  .hiddenCard:before {
+    top: 0.15rem;
+    left: 0;
+  }
+  .hiddenCard:after {
+    bottom: 0.1rem;
+    right: 0;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+  .back {
+    position: absolute;
+    background-image: url("../../images/back.png");
+    background-position: 50% 50%;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+  }
+  .disabled{
+    pointer-events: none;
+    opacity: 0.7;
+  }
+
+  .currentPlayer {
+    position:absolute;
+    width: 70px;
+    color: white;
+    display: block;
+    margin-top: -30px;
+    box-sizing: border-box;
+    box-shadow: 1px 2px 30px springgreen;
+    -webkit-animation: blink 4.0s linear infinite;
+    -moz-animation: blink 4.0s linear infinite;
+    -ms-animation: blink 4.0s linear infinite;
+    -o-animation: blink 4.0s linear infinite;
+    animation: blink 4.0s linear infinite;
+  }
+
+  .roundWinner{
+    /* position:absolute;
+    width: 70px;
+    color: white;
+    display: block;
+    margin-top: -40px;
+    float: right;
+    box-sizing: border-box; */
+    display: block;
+    position:absolute;    
+    z-index: 2;
+    left: 0;
+    background-size: cover;
+    width: 15px;
+    height: 25px;
+    background-position: 50% 50%; 
+    background-image: url('../../images/gold_medal.jpeg'); 
+  }
+
+  .testLabel{
+    display: block;
+  }

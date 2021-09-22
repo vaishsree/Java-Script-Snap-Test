@@ -1,0 +1,144 @@
+.cardContainer{
+    position: relative;
+    margin-top: 5em;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.playCard {
+  position: absolute;
+  display: inline-block;
+  left: -1.9375rem;
+  top: -2.75rem;
+  width: 200px;
+  height: 300px;
+  background-color: #fff;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.15);
+  box-shadow: 0 1px 1px rgba(0,0,0,0.15);
+  cursor: default;
+  will-change: transform;
+}
+.playCard:before,
+.playCard:after {
+  position: absolute;
+  font-size: 1.7rem;
+  text-align: center;
+  line-height: 1.7rem;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  white-space: pre-line;
+  width: 0.55rem;
+  letter-spacing: -0.1rem;
+}
+.playCard:before {
+  top: 0.15rem;
+  left: 0;
+}
+.playCard:after {
+  bottom: 0.1rem;
+  right: 0;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.playCard .face {
+  height: 100%;
+  background-position: 50% 50%;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.playCard.spades,
+.playCard.clubs {
+  color: #000;
+}
+.playCard.hearts,
+.playCard.diamonds {
+  color: #d40000;
+}
+
+.playCard.rankA:before,
+.playCard.rankA:after {
+  content: "A";
+}
+.playCard.rank2:before,
+.playCard.rank2:after {
+  content: "2";
+}
+.playCard.rank3:before,
+.playCard.rank3:after {
+  content: "3";
+}
+.playCard.rank4:before,
+.playCard.rank4:after {
+  content: "4";
+}
+.playCard.rank5:before,
+.playCard.rank5:after {
+  content: "5";
+}
+.playCard.rank6:before,
+.playCard.rank6:after {
+  content: "6";
+}
+.playCard.rank7:before,
+.playCard.rank7:after {
+  content: "7";
+}
+.playCard.rank8:before,
+.playCard.rank8:after {
+  content: "8";
+}
+.playCard.rank9:before,
+.playCard.rank9:after {
+  content: "9";
+}
+.playCard.rank10:before,
+.playCard.rank10:after {
+  content: "10";
+}
+.playCard.rankJ:before,
+.playCard.rankJ:after {
+  content: "J";
+}
+.playCard.rankQ:before,
+.playCard.rankQ:after {
+  content: "Q";
+}
+.playCard.rankK:before,
+.playCard.rankK:after {
+  content: "K";
+}
+
+  .spades { background-image: url('../../images/spades_4.svg'); }
+  .hearts { background-image: url('../../images/hearts_4.svg'); }
+  .diamonds { background-image: url('../../images/diamonds_4.svg'); }
+  .clubs { background-image: url('../../images/clubs_4.svg'); }
+
+  .snap{
+    box-sizing: border-box;
+    box-shadow: 5px 0px 50px orangered;
+    -webkit-animation: blink 4.0s linear infinite;
+    -moz-animation: blink 4.0s linear infinite;
+    -ms-animation: blink 4.0s linear infinite;
+    -o-animation: blink 4.0s linear infinite;
+    animation: blink 4.0s linear infinite;
+  }
+
+  /* @keyframes blink {
+    0% { box-shadow: 45px 0px 50px orangered; }
+    50% { box-shadow: 0 0 0; }
+    100% { box-shadow: 45px 0px 50px orangered; }
+  }
+
+  @-webkit-keyframes blink {
+      0% { box-shadow: 45px 0px 50px orangered; }
+      50% { box-shadow: 0 0 0; }
+      100% { box-shadow: 45px 0px 50px orangered }
+  } */
+
